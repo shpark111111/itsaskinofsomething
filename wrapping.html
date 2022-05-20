@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>It's a skin of something</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">It's a skin of something</a>
+        <ul class="navigation">
+            <li><a href="index.html">Graphics</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="book.html">Book</a></li>
+            <li><a href="wrapping.html">Wrapping</a></li>
+        </ul>
+    </div>
+    <div class="wrapping_box">
+        <img id="image-area" src="graphic1.png" alt="">
+        <div class="button-area">
+            <button class="button1" onclick="young()">skin</button>
+            <button class="button2" onclick="old()">wrap</button>
+        </div>
+    </div>
+
+
+    <script>
+        var img = document.getElementById("image-area");
+
+        function young() {
+            img.src = 'graphic1.png';
+        }
+
+        function old() {
+            img.src = 'boxmapping3.png';
+        }
+    </script>
+</body>
